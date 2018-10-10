@@ -1,0 +1,55 @@
+<html>
+        <head>
+            <title>form</title>
+            <meta charset="utf-8">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+            <script src='form.js'></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <style type="text/css">
+                body {
+                background: #f3f3f3;
+                }
+                label {
+                    margin: 10px;
+                }
+                .form-control {
+                    width: 500px;
+                }
+                .btn {
+                    margin-top: 10px; 
+                }
+            </style>            
+        </head>
+        <body>
+            <center>
+            <script type='text/javascript'></script>
+            <div>
+                <div>
+                <h1>Add post</h1>
+                <label>Title</label>
+                <input type="text" class="form-control" id="title" name="title">
+                <label>Text</label>
+                <input type="text" class="form-control" id="text" name="title">
+                <label>Author</label>
+                <input type="text" class="form-control" id="author" name="title">
+                <input type="button" onclick="createArticle()" value="Create article" class="btn">
+            </div>
+            <div>
+                <h1></h1>
+                <h1>Add comment</h1>
+                <label>Article Id</label>
+                <input type="text" class="form-control" id="idc" name="idc">
+                <label>Title</label>
+                <input type="text" class="form-control" id="titlec" name="titlec">
+                <label>Text</label>
+                <input type="text" class="form-control" id="textc" name="titlec">
+                <label>Author</label>
+                <input type="text" class="form-control" id="authorc" name="titlec">
+
+                <input type="button" onclick="create()" value="Create comment" class="btn">
+                <button class="btn" onclick="window.location.replace('./index.html')">Main page</button>
+            </div>
+            </div>
+        </center>
+        </body>
+    </html>
